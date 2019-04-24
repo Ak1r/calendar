@@ -1,0 +1,46 @@
+<html>
+	<head>
+		<link rel="stylesheet" href="style.css">
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	</head>
+	<body>
+		<!-- The Modal -->
+<div id="eventModal" class="modal">
+
+  <!-- Modal content -->
+  <div class="modal-content">
+    <div class="modal-header" id="modal_header">
+      <span onclick="closeModal();" class="close">&times;</span>
+      <h2 id="header"></h2>
+    </div>
+    <div class="modal-body">
+      <h3 id="body_header" style="margin-bottom: 0px; margin-top: 40px; font-size: 24px;"></h3>
+      <h4 id="body_header2" style="margin-top: 5px; margin-bottom: 5px; font-size: 22px;"></h4>
+      <div id="paragraphs">
+      	
+      </div>
+
+      <p style="max-width: 300px; text-align: center; margin: auto; margin-bottom: 5px; font-size: 18px;" id="body"></p>
+
+      <div id="form">
+      	
+      </div>
+    </div>
+    <div class="modal-footer" id="modal_footer">
+      <h3>/</h3>
+    </div>
+  </div>
+
+</div>
+		
+		<div id="calendar"></div>
+		<script type="text/javascript" src="calendarize.js"></script>
+		<script type="text/javascript" src="create_event.js"></script>
+		<script type="text/javascript">
+			var $calendar = document.getElementById("calendar");
+			var currentYear = new Date().getFullYear();
+			var calendarize = new Calendarize();
+			calendarize.buildYearCalendar($calendar, currentYear);
+		</script>
+	</body>
+</html>
