@@ -203,5 +203,19 @@ h1,h2,h3,h4{
 	background: green;
 }
 
+@media only screen and (max-width: 600px) {
+	.month {
+		width: 80%;
+		padding: 20px;
+		background: #fff;
+		position: relative;
+		overflow: hidden;
+		float: left;
+		margin: 5%;
+		height: 350px;
+	}
+
+	
+}
 
 
