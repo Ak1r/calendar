@@ -189,6 +189,9 @@ function Calendarize() {
 				// modal function
 				$dayNode.onclick = function() { 
 					document.getElementById('eventModal').style.height = "100%";
+					document.getElementById('eventModal').style.zIndex = "1";
+ 					document.getElementById('eventModal').style.backgroundColor = "rgb(0,0,0)";
+					document.getElementById('eventModal').style.backgroundColor = "rgba(0,0,0,0.4)";
 					const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];
 					var data = new Date(this.getAttribute("data-date"));
 					let formatted_date = data.getDate() + " " + months[data.getMonth()] + " " + data.getFullYear();
