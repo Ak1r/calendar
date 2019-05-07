@@ -10,9 +10,7 @@ var modal_header = document.getElementById("modal_header");
 var modal_footer = document.getElementById("modal_footer");
 span.onclick = function() {
   modal.style.height = "0";
-  document.getElementById('eventModal').style.zIndex = null;
- 	document.getElementById('eventModal').style.backgroundColor = null;
-	document.getElementById('eventModal').style.backgroundColor = null;
+  modal.removeAttribute("style");
   head.innerHTML = "";
   body_parag.innerHTML = "";
   body_text.innerHTML = "";
@@ -24,9 +22,7 @@ span.onclick = function() {
 window.onclick = function(event) {
   if (event.target == modal) {
     modal.style.height = "0";
-    document.getElementById('eventModal').style.zIndex = null;
- 	  document.getElementById('eventModal').style.backgroundColor = null;
-	  document.getElementById('eventModal').style.backgroundColor = null;
+    modal.removeAttribute("style");
     head.innerHTML = "";
     body_parag.innerHTML = "";
     body_text.innerHTML = "";
