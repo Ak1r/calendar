@@ -188,7 +188,7 @@ function Calendarize() {
 
 				// modal function
 				$dayNode.onclick = function() { 
-					document.getElementById('eventModal').style.display = "block";
+					document.getElementById('eventModal').style.height = "100%";
 					const months = ["January", "February", "March","April", "May", "June", "July", "August", "September", "October", "November", "December"];
 					var data = new Date(this.getAttribute("data-date"));
 					let formatted_date = data.getDate() + " " + months[data.getMonth()] + " " + data.getFullYear();
