@@ -9,7 +9,7 @@ var body_header_2 = document.getElementById("body_header2");
 var modal_header = document.getElementById("modal_header");
 var modal_footer = document.getElementById("modal_footer");
 span.onclick = function() {
-  modal.style.display = "none";
+  modal.style.height = "0";
   head.innerHTML = "";
   body_parag.innerHTML = "";
   body_text.innerHTML = "";
@@ -20,7 +20,7 @@ span.onclick = function() {
 }
 window.onclick = function(event) {
   if (event.target == modal) {
-    modal.style.display = "none";
+    modal.style.height = "0";
     head.innerHTML = "";
     body_parag.innerHTML = "";
     body_text.innerHTML = "";
